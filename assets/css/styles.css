@@ -1,0 +1,128 @@
+/* Importamos el archivo de las fuentes CSS para poder utilizarlas en nuestro proyecto solo con la propiedad font-family: ... */
+@import url('fonts.css');
+
+:root {
+  --color1: #03121c;
+  --color2: #050f1b;
+  --color4: #140736;
+  --color5: #558dff;
+  --color3: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.bar_menu {
+  background: transparent;
+  border: 1px solid var(--color1);
+  backdrop-filter: blur(10px);
+}
+
+.op {
+  color: var(--color3);
+}
+
+#inicio {
+  background-image: url(https://img.freepik.com/vector-premium/fondo-pantalla-vectorial-ilustracion-stock-montanas-paisaje-nocturno_538866-45.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contai_1 {
+  text-align: center;
+}
+
+#sobre_mi {
+  background-color: var(--color1);
+  padding: 50px;
+}
+
+span {
+  color: rgb(41, 134, 160);
+}
+
+.f_perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  left: 100;
+  border: 3px solid var(--color3);
+  margin: 0 auto;
+  display: block;
+  z-index: 2;
+}
+
+.presentacion {
+  padding-top: 47px;
+}
+
+.habilit {
+  padding: 50px;
+}
+
+.icono1,
+.icono2,
+.icono3 {
+  font-size: 50px;
+  margin: 0 3px;
+}
+
+.contai_3 {
+  left: 10%;
+  width: 60%;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  border: 3px solid var(--color3);
+  border-radius: 10px;
+  padding: 50px 20px;
+}
+
+.contai_4 {
+  text-align: center;
+}
+
+#mensaje {
+  padding: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contai_3 {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contai_3 {
+    width: 90%;
+    left: 5%;
+  }
+  .presentacion {
+    padding-top: 50px;
+  }
+  .habilit {
+    padding: 30px;
+  }
+  .f_perfil {
+    width: 150px;
+    height: 150px;
+  }
+  .icono1,
+  .icono2,
+  .icono3 {
+    font-size: 30px;
+  }
+}
