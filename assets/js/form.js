@@ -97,3 +97,18 @@ function validarFormulario(event) {
   
   
   document.getElementById('form').addEventListener('submit', validarFormulario);
+
+  //borra campos  despues de la alerta enviado
+
+  function borrarCampos() {
+
+    document.getElementById('nombre').value = '';
+    document.getElementById('asunto').value = '';
+    document.getElementById('correo').value = '';
+    document.getElementById('mensaje').value = '';
+  }
+
+  document.getElementById('form').addEventListener('submit', borrarCampos);
+
+  
+
