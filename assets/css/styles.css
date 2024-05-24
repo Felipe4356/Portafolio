@@ -67,16 +67,7 @@ span {
   color: rgb(41, 134, 160);
 }
 
-.f_perfil {
-  width: 200px;
-  height: 200px;
-  border-radius: 10%;
-  left: 100;
-  border: 3px solid var(--color3);
-  margin: 0 auto;
-  display: block;
-  z-index: 2;
-}
+
 
 .presentacion {
   padding-top: 47px;
@@ -120,21 +111,18 @@ span {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .contai_3 {
-    width: 100%;
-    left: 5%;
+    width: 80%;
+    left: 10%;
   }
   .presentacion {
-    padding-top: 50px;
+    padding-top: 500px;
   }
   .habilit {
     padding: 30px;
   }
-  .f_perfil {
-    width: 150px;
-    height: 150px;
-  }
+ 
   .icono1,
   .icono2,
   .icono3 {
