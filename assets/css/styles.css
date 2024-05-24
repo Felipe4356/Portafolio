@@ -111,7 +111,7 @@ span {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 350px) {
   .contai_3 {
     width: 80%;
     left: 10%;
